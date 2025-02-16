@@ -648,17 +648,12 @@ img {
 }
 
 
-.footer-mail-container {
-    flex-direction: column;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-}
-  
+ 
 .footer-form-wraper{
     display: flex;
     flex-direction: column;
-   
+    justify-content: center;
+        
 }
 
 .footer-mail-text {
