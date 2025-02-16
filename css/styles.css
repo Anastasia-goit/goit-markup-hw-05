@@ -737,7 +737,7 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: opacity 250mscubic-bezier(0.4, 0, 0.2, 1), visibility 250mscubic-bezier(0.4, 0, 0.2, 1);
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -751,7 +751,7 @@ img {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        transition: transform 250mscubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-modal-close {
@@ -768,11 +768,23 @@ img {
         border: 1px solid rgba(0, 0, 0, 0.1);
         padding: 0;
         cursor: pointer;
-        transition: background-color 250mscubic-bezier(0.4, 0, 0.2, 1), border 250mscubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-modal-close:hover ,
+.button-modal-close:focus{
+    background-color: #404bbf;
+    border: none;
+
 }
 
 .icon-modal-button {
-transition: fill 250mscubic-bezier(0.4, 0, 0.2, 1);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-modal-button:hover,
+.icon-modal-button:focus {
+    fill: #ffffff;
 }
 
 .text-modal {
@@ -810,7 +822,11 @@ transition: fill 250mscubic-bezier(0.4, 0, 0.2, 1);
         background-color: transparent;
         padding-left: 38px;
         outline: transparent;
-        transition: border-color 250mscubic-bezier(0.4, 0, 0.2, 1);
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus{
+    border-color: #4D5AE5;
 }
 
 .form-icon-modal {
@@ -818,7 +834,11 @@ transition: fill 250mscubic-bezier(0.4, 0, 0.2, 1);
             left: 16px;
             top: 50%;
             transform: translateY(-50%);
-            transition: fill 250mscubic-bezier(0.4, 0, 0.2, 1);
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-icon-modal:focus{
+    fill: #4D5AE5;
 }
 
 .form-textarea {
@@ -840,7 +860,11 @@ transition: fill 250mscubic-bezier(0.4, 0, 0.2, 1);
         padding: 8px 16px;
         outline: transparent;
         resize: none;
-        transition: border-color 250mscubic-bezier(0.4, 0, 0.2, 1);
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-modal-textarea:focus{
+    border-color: #4D5AE5;
 }
 
 .checkbox-container {
@@ -872,7 +896,7 @@ transition: fill 250mscubic-bezier(0.4, 0, 0.2, 1);
         height: 16px;
         border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 2px;
-        transition: background-color 250mscubic-bezier(0.4, 0, 0.2, 1), border 250mscubic-bezier(0.4, 0, 0.2, 1), fill 250mscubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -901,7 +925,7 @@ transition: fill 250mscubic-bezier(0.4, 0, 0.2, 1);
         cursor: pointer;
         background-color: #4d5ae5;
         border: none;
-        transition: background-color 250mscubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         margin: 0 auto;
 }
     
